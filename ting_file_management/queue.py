@@ -12,8 +12,7 @@ class Queue(AbstractQueue):
         self._data.append(value)
 
     def dequeue(self):
-        is_empty = self._data == []
-        if not is_empty:
+        if not self.is_empty():
             return self._data.pop(0)
         else:
             return None
@@ -24,3 +23,6 @@ class Queue(AbstractQueue):
             raise IndexError("Índice Inválido ou Inexistente")
         else:
             return self._data[index]
+
+    def is_empty(self):
+        return self._data == []

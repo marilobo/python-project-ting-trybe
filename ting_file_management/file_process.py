@@ -20,8 +20,8 @@ def process(path_file, instance):
     print(file_dict)
 
 
-def remove(instance):
-    """Aqui irá sua implementação"""
+# def remove(instance):
+#     if
 
 
 def file_metadata(instance, position):
