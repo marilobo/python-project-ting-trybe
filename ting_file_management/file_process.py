@@ -26,12 +26,11 @@ def remove(instance):
         print(f"Arquivo {path_file['nome_do_arquivo']} removido com sucesso")
     else:
         print("Não há elementos")
-    
 
 
 def file_metadata(instance, position):
     try:
         file = instance.search(position)
         print(file)
-    except:
+    except IndexError:
         sys.stderr.write("Posição inválida")
